@@ -132,7 +132,7 @@ function DisplayWPAConfig(){
     }
   }
 
-  exec( 'iwconfig wlan0', $iwconfig_return );
+  exec( 'iwconfig wlan1', $iwconfig_return );
   foreach ($iwconfig_return as $line) {
     if (preg_match( '/ESSID:\"(.+)\"/i',$line,$iwconfig_ssid )) {
       $networks[$iwconfig_ssid[1]]['connected'] = true;

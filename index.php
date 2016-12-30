@@ -122,7 +122,7 @@ $csrf_token = $_SESSION['csrf_token'];
           <div class="sidebar-nav navbar-collapse">
             <ul class="nav" id="side-menu">
               <li>
-                <a href="index.php?page=wlan0_info"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                <a href="index.php?page=wlan1_info"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
               </li>
               <li>
                 <a href="index.php?page=wpa_conf"><i class="fa fa-signal fa-fw"></i> Configure client</a>
@@ -168,7 +168,7 @@ $csrf_token = $_SESSION['csrf_token'];
         <?php 
         // handle page actions
         switch( $page ) {
-          case "wlan0_info":
+          case "wlan1_info":
             DisplayDashboard();
             break;
           case "dhcpd_conf":
